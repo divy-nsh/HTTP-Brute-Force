@@ -1,4 +1,4 @@
-# HTTP-Brute-Force
+# Brute-Force Login Script with CSRF Token Bypass (Conceptual)
 
 **Disclaimer:**
 
