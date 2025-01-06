@@ -43,14 +43,14 @@ The script attempts login with each username-password combination from the provi
 
 **How it Works:**
 
-1.Parses arguments: Reads command-line arguments using argparse.
-2.Loads usernames and passwords: Reads usernames from the provided file and loads passwords from the file.
-3.Attempts login: Iterates through each username-password combination, attempts to log in using Selenium, and checks for successful login based on the presence of a specific element (customizable) or a 302 redirect (if --change is set to "Y").
-4.Checks for success:
-   Checks for HTTP 302 redirects (if applicable).
-   Checks for the presence of a specific element on the successful login page (customizable).
-5.Handles exceptions: Includes error handling for common issues like WebDriverException, TimeoutException, and other exceptions.
-6.Exits on success: Exits the script immediately after the first successful login attempt.
+1. Parses arguments: Reads command-line arguments using argparse.
+2. Loads usernames and passwords: Reads usernames from the provided file and loads passwords from the file.
+3. Attempts login: Iterates through each username-password combination, attempts to log in using Selenium, and checks for successful login based on the presence of a specific element (customizable) or a 302 redirect (if --change is set to "Y").
+4. Checks for success:
+   * Checks for HTTP 302 redirects (if applicable).
+   * Checks for the presence of a specific element on the successful login page (customizable).
+5. Handles exceptions: Includes error handling for common issues like WebDriverException, TimeoutException, and other exceptions.
+6. Exits on success: Exits the script immediately after the first successful login attempt.
 
 **Disclaimer:**
 
