@@ -1,5 +1,4 @@
 # HTTP-Brute-Force
-# Brute-Force Login Script
 
 **Disclaimer:**
 
