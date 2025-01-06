@@ -29,13 +29,13 @@ python Http-Brute.py -u <target_url> --uid <username_xpath> --pid <password_xpat
 ```
 **Arguments:**
 
-* `-u, --url:` Target URL of the login page. (Required)
-* `--uid, --username_xpath:` XPath of the username/email input field. (Required)
-* `--pid, --password_xpath:` XPath of the password input field. (Required)
-* `--sid, --submit_xpath:`XPath of the login button or submit element. (Required)
-* `--user, --username_file:` Path to the file containing usernames (one username per line). (Required)
-* `--pass, --password_file:` Path to the file containing passwords (one password per line). (Required)
-* `--change, <check_for_302_redirect>:` Set to "Y" (case-insensitive) to check for a 302 redirect (indicating successful login) after attempting login credentials.
+`-u, --url:` Target URL of the login page. (Required)\
+`--uid, --username_xpath:` XPath of the username/email input field. (Required)\
+`--pid, --password_xpath:` XPath of the password input field. (Required)\
+`--sid, --submit_xpath:`XPath of the login button or submit element. (Required)\
+`--user, --username_file:` Path to the file containing usernames (one username per line). (Required)\
+`--pass, --password_file:` Path to the file containing passwords (one password per line). (Required)\
+`--change, <check_for_302_redirect>:` Set to "Y" (case-insensitive) to check for a 302 redirect (indicating successful login) after attempting login credentials.
 
 **Note:**
 
