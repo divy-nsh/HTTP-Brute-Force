@@ -18,7 +18,9 @@
 
    ```bash
    pip install selenium
+
 Download and install the appropriate WebDriver for your desired browser (if not already installed).
+
 **Usage:**
 
 ```Bash
