@@ -21,9 +21,10 @@
 Download and install the appropriate WebDriver for your desired browser (if not already installed).
 Usage:
 
-Bash
+```Bash
 
 python your_script_name.py -u <target_url> --uid <username_xpath> --pid <password_xpath> --sid <submit_xpath> --user <username_file> --pass <password_file> --change <check_for_302_redirect>
+```
 Arguments:
 
 -u, --url: Target URL of the login page. (Required)
@@ -33,6 +34,7 @@ Arguments:
 --user, --username_file: Path to the file containing usernames (one username per line). (Required)
 --pass, --password_file: Path to the file containing passwords (one password per line). (Required)
 --change, <check_for_302_redirect>: Set to "Y" (case-insensitive) to check for a 302 redirect (indicating successful login) after attempting login credentials. Defaults to "N". (Optional)
+
 Note:
 
 Replace <your_script_name.py> with the actual filename of your script.
@@ -59,7 +61,8 @@ Brute-force attacks can be time-consuming and resource-intensive. Consider alter
 Always use this script responsibly and ethically.
 Example:
 
-Bash
+```Bash
 
 python your_script_name.py -u [https://www.example.com/login](https://www.example.com/login) -u "//input[@id='username']" -p "//input[@id='password']" -s "//button[@type='submit']" -user usernames.txt -pass passwords.txt --change Y
+```
 This example command attempts to brute-force login on the target URL "https://www.example.com/login" using usernames from "usernames.txt" and passwords from "passwords.txt". It checks for a 302 redirect after each login attempt.
