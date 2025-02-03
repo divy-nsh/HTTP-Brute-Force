@@ -39,7 +39,6 @@ python Http-Brute.py -u <target_url> --uid <username_xpath> --pid <password_xpat
 
 **Note:**
 
-Replace <your_script_name.py> with the actual filename of your script.
 Ensure the provided XPaths accurately target the username, password, and submit elements on the login page.
 The script attempts login with each username-password combination from the provided files.
 
@@ -69,6 +68,6 @@ Always use this script responsibly and ethically.
 
 ```Bash
 
-python Http-Brute.py -u [https://www.example.com/login](https://www.example.com/login) -u "//input[@id='username']" -p "//input[@id='password']" -s "//button[@type='submit']" -user usernames.txt -pass passwords.txt --change Y
+python Http-Brute.py --url https://www.example.com/login --uid "//input[@id='username']" --pid "//input[@id='password']" --sid "//button[@type='submit']" --user usernames.txt --pass passwords.txt --change Y
 ```
 This example command attempts to brute-force login on the target URL "https://www.example.com/login" using usernames from "usernames.txt" and passwords from "passwords.txt". It checks for a 302 redirect after each login attempt.
